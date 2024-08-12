@@ -28,11 +28,10 @@ public class FundingServiceImpl implements FundingService {
     @Override
     public List<Funding> allFundingList() {
         QFunding qFunding = QFunding.funding;
-        JPAQuery<Funding> fundingJPAQuery = query.selectFrom(qFunding).fetchAll();
-        List<Funding> fundings = fundingJPAQuery.fetch();
+        List<Funding> fetch = query.selectFrom(qFunding).fetch();
         em.flush();
         em.clear();
-        return fundings;
+        return fetch;
     }
 
     @Override
