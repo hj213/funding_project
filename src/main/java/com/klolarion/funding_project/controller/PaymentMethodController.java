@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequiredArgsConstructor
-@RequestMapping("/payment")
+@RequestMapping("/paymentMethod")
 public class PaymentMethodController {
 //    private final PaymentServiceImpl paymentServiceImpl;
 

@@ -20,8 +20,6 @@ public class FundingListDto {
     private Long totalFundingAmount;
     private Long currentFundingAmount;
     private String fundingAccount;
-    private boolean completed;
-    private boolean closed;
-    private boolean deleted;
+    private String status;
 
 }
