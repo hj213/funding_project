@@ -6,7 +6,13 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/test_db
     username: root
-    password: Yun422537265!
+    password: 1234
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    encoding: UTF-8
   jpa:
     hibernate:
       ddl-auto: create
@@ -30,12 +36,6 @@ spring:
       name: user
       password: 1234
 
-  thymeleaf:
-    prefix: classpath:/templates/
-    suffix: .html
-    enabled: true
-    cache: false
-
 springdoc:
   api-docs:
     enabled: false
@@ -48,4 +48,4 @@ application:
       refresh-expiration: 2067600000 # 24 days
 
 server:
-  port: 8081
+  port: 8080
